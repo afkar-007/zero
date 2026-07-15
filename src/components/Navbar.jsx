@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ZeroLogo from '../images/ZeroLogo1.png'
+import ZeroLogos from '../images/Zerologo1.png'
 import '../styles/Navbar.css'
 import { useContext } from 'react'
 import { items } from '../Context/createContext'
@@ -16,7 +16,7 @@ function Navbar() {
 
    <div className='navbar'>
     
-   <img  className='logoimg'   src={ZeroLogo}           alt="" />
+   <img  className='logoimg'   src={ZeroLogos}           alt="" />
    <Link className='nav-links' to={'/home'}>     Home     </Link>
    <Link className='nav-links' to={'/cart'}>     Cart ({cart.length})   </Link>
    <Link className='nav-links' to={'/wishlist'}> Wishlist ({things.length}) </Link>
