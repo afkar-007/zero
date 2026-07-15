@@ -176,7 +176,15 @@ body{
 
 
 
+@media (max-width:700px){
+  .login-container{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: none;
+  }
+  
 
+}
 
 
 
