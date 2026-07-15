@@ -1,5 +1,5 @@
 import React from 'react'
-import paymentImg from '../images/Payment.jpg'
+import paymentImg from '../images/payment.jpg'
 import '../styles/pay.css'
 import { useNavigate } from 'react-router-dom'
 function Payment() {
