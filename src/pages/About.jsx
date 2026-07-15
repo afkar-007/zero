@@ -6,6 +6,16 @@ import { useNavigate } from 'react-router-dom'
 
 function About() {
   const Navigate = useNavigate()
+
+
+function Logout(){
+  localStorage.removeItem("gate")
+  Navigate('/')
+}
+
+
+
+
   return (
     <>
     <Navbar></Navbar>
@@ -36,7 +46,7 @@ function About() {
 
 Thank you for choosing ZERO. We're excited to be part of your shopping journey and look forward to serving you.</h2>
         <p>...</p>
-        <button className='logout-btn'>Log Out</button>
+        <button className='logout-btn'onClick={Logout} >Log Out</button>
     </div>
 </div>
 
