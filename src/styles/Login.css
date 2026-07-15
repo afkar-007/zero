@@ -10,6 +10,7 @@ body{
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
+  overflow-y: hidden;
   
   /* Full screen background image setup */
   background-image:url('../images/LoginBg.jpg') ;
