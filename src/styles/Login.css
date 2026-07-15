@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 
@@ -13,53 +14,39 @@ body{
     padding: 0;
 }
 
-.login-page{
-  margin: 0px;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-  
-  /* Full screen background image setup */
-  background-image:url('../images/LoginBg.jpg') ;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: hidden;
-  
-  /* Center the login box perfectly */
-  display: flex;
-  justify-content: center;
-  
-  align-items: center;
-  min-height: 100vh;
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/LoginBg.jpg") center/cover no-repeat;
+    overflow: hidden;
 }
 
 /* The semi-transparent login box floating over the image */
 .login-page .login-container {
-  /* Keep the background semi-transparent so the background moon/nebula shows through */
-  background: rgba(15, 23, 42, 0.45); /* Dark cosmic tint with opacity */
-  
-  /* Smooth glass effect */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  
-  /* REMOVED the solid white border, replaced with an ultra-faint, elegant star-mist border */
-  border: 1px solid rgba(255, 255, 255, 0.08); 
-  
-  /* Soft, dark cosmic shadow instead of a harsh outline */
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 
-              0 0 50px rgba(255, 255, 255, 0.03); /* Tiny hints of starlight glow */
-              
-  border-radius: 16px;
-  padding: 40px;
-  width: 100%;
-  max-width: 400px;
-  box-sizing: border-box;
+    width: 90%;
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 24px;
+   
 
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 
-  overflow-x: hidden;
-  overflow-y: hidden;
+    /* Border */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    /* Shadow */
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 1px rgba(255, 255, 255, 0.15);
+
+    /* Optional */
+    overflow: hidden;
+    position: relative;
 }
 
 
