@@ -48,6 +48,10 @@ body{
   width: 100%;
   max-width: 400px;
   box-sizing: border-box;
+
+
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 
