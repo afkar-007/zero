@@ -56,6 +56,7 @@ function Login() {
 
   return (
     <>
+    <div className='main'>
    
 <div className='login-page'>
 
@@ -84,7 +85,7 @@ function Login() {
     </div>
 
       </div>
-      
+      </div>
     </>
   )
 }
