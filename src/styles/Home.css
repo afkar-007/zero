@@ -1,0 +1,163 @@
+.BodyDiv{
+    background:
+    radial-gradient(circle at top,#2d2305 0%,#111 35%,#000 100%);
+    min-height:100vh;
+    width: 100%;
+
+}
+
+
+.hero{
+    width:100%;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:70px 8%;
+    gap:60px;
+    overflow:hidden;
+}
+
+.hero-left{
+    flex:1;
+}
+
+.hero-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+}
+/* Left Side */
+
+.hero-left{
+    flex:1;
+}
+
+.hero-left h1{
+    font-size:60px;
+    max-width:500px;
+    line-height:1.1;
+    word-break:break-word;
+}
+
+.hero-left p{
+    max-width:500px;
+}
+
+.hero-left button{
+    padding:15px 40px;
+    border:none;
+    border-radius:40px;
+    background:#000;
+    color:#fff;
+    font-size:17px;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.hero-left button:hover{
+    transform:translateY(-5px);
+    background:#d4af37;
+    color:#000;
+}
+
+/* Right Side */
+
+.hero-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.hero-right img{
+    width:200px;
+    height:420px;
+    object-fit:cover;
+    border-radius:25px;
+    display:block;
+}
+
+.hero-right img:nth-child(2){
+    height:480px;
+}
+
+.hero-right img:hover{
+    transform:translateY(-15px) scale(1.05);
+}
+
+
+
+
+.loader{
+    width:60px;
+    height:60px;
+    border:6px solid #e5e7eb;
+    border-top:6px solid #2563eb;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin:100px auto;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-right{
+    margin-top:40px;
+}
+
+.hero-left h1{
+    font-size:40px;
+}
+
+.hero-right img{
+    width:120px;
+    height:250px;
+
+}
+
+.hero-right img:nth-child(2){
+    height:290px;
+}
+
+}

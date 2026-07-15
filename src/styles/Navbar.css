@@ -1,0 +1,97 @@
+.navbar{
+display: flex;
+
+height: 8rem;
+background-color:black;
+box-shadow:
+0 12px 35px rgba(0, 0, 0, 0.55),
+0 1px 0 rgba(255, 215, 0, 0.25),
+inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.nav-links{
+    margin: auto;
+  text-decoration: none;
+    color: grey;
+    letter-spacing: 1px;
+}
+
+.nav-links:hover{
+    color: white;
+}
+/* Logo */
+
+.logoimg{
+    width:170px;
+    border-radius: 20px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.logoimg:hover{
+    transform:scale(1.08);
+    filter:drop-shadow(0 0 15px rgb(94, 94, 94));
+}
+
+
+.sideNavDiv{
+  display: flex;
+
+height: 2rem;
+background-color:rgb(59, 59, 59);
+box-shadow:
+0 12px 35px rgba(0, 0, 0, 0.55),
+0 1px 0 rgba(255, 215, 0, 0.25),
+inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+   
+}
+
+
+.side-nav-links{
+     margin: auto;
+    text-decoration: none;
+    color: grey;
+    letter-spacing: 1px;
+}
+
+.side-nav-links:hover{
+    color: white;
+}
+
+
+
+
+
+@media (min-width:900px){
+    .side-nav-links{
+        display: none;
+    }
+    .sideNavDiv{
+        display: none;
+    }
+}
+
+@media(max-width:900px){
+.navbar{
+    height: 6rem;
+}
+.nav-links{
+    display: none;
+}
+.logoimg{
+    margin: auto;
+    
+}
+
+.logoimg:hover{
+  transform: none;
+}
+.logoimg{
+    height: 5rem;
+    width: 8rem;
+  
+   
+
+}
+}
+

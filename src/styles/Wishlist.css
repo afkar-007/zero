@@ -1,0 +1,241 @@
+.wishlist-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+    min-height: 500px; /* Same height for all cards */
+    background: #858585;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    
+}
+
+
+.wishlist-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding:40px;
+    max-width:1400px;
+  margin: auto;
+  min-height: 100vh;
+ 
+ 
+   
+    background: linear-gradient(135deg, #0b1320, #151f32, #090f19);
+  
+}
+.wishlist-card:hover{
+    background-color: rgb(165, 163, 163);
+}
+
+
+
+
+
+
+.wishlist-card:hover{
+    transform: translateY(-10px);
+    box-shadow:
+        0 25px 45px rgba(0,0,0,0.25),
+        0 0 30px rgba(212,175,55,0.25);
+}
+.wishlist-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.wishlist-card:hover img{
+    transform: scale(1.08);
+}
+
+.wishlist-card h1{
+    font-size: 20px;
+    margin: 15px 0 10px;
+    min-height: 55px; /* Same title height */
+}
+Price /
+
+
+
+
+
+
+
+
+.wishlist-card p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    min-height: 25px;
+}
+.wishlist-card button{
+    display: block;
+    width: 85%;
+    margin: auto;
+    padding: 14px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    background: linear-gradient(135deg,#111,#2d2d2d,#000);
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    transition: .35s;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.25),
+        inset 0 0 0 1px rgba(255,255,255,.08);
+}
+
+.wishlist-card button:hover{
+    background: linear-gradient(135deg,#ff0808,#f5d76e,#c79b1b);
+    color: #111;
+    transform: translateY(-4px);
+    box-shadow:
+        0 15px 30px rgba(212,175,55,.45);
+}
+
+.wishlist-card button:active{
+    transform: scale(.97);
+}
+.wishlist-card::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:3px;
+    background:linear-gradient(to right,#d4af37,#f7e08d,#d4af37);
+    margin:18px auto 0;
+    border-radius:10px;
+}
+
+@media (max-width:1024px){
+
+    .wishlist-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+        padding:30px;
+       
+    }
+
+    .wishlist-card{
+        width:100%;
+        max-width:340px;
+        margin:auto;
+    }
+
+    .wishlist-card img{
+        height:230px;
+    }
+
+}
+
+/* Tablets */
+@media (max-width:768px){
+
+    .wishlist-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+        padding:20px;
+       
+    }
+
+    .wishlist-card{
+        border-radius:18px;
+    }
+
+    .wishlist-card img{
+        height:210px;
+        padding:15px;
+    }
+
+    .wishlist-card h1{
+        font-size:1.1rem;
+    }
+
+    .wishlist-card p{
+        font-size:.95rem;
+    }
+
+    .wishlist-card button{
+        width:90%;
+        padding:12px;
+        font-size:14px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width:600px){
+
+    .wishlist-container{
+        grid-template-columns:1fr;
+        gap:20px;
+        padding:15px;
+    }
+
+    .wishlist-card{
+        width:100%;
+        max-width:380px;
+        margin:auto;
+    }
+
+    .wishlist-card img{
+        height:200px;
+    }
+
+    .wishlist-card h1{
+        font-size:1rem;
+        margin:12px;
+    }
+
+    .wishlist-card p{
+        font-size:.9rem;
+        margin-bottom:15px;
+    }
+
+    .wishlist-card button{
+        width:92%;
+        padding:12px;
+        font-size:14px;
+    }
+
+}
+
+/* Small Mobile */
+@media (max-width:400px){
+
+    .wishlist-container{
+        padding:10px;
+    }
+
+    .wishlist-card{
+        border-radius:15px;
+    }
+
+    .wishlist-card img{
+        height:170px;
+        padding:10px;
+    }
+
+    .wishlist-card h1{
+        font-size:.95rem;
+    }
+
+    .wishlist-card p{
+        font-size:.85rem;
+    }
+
+    .wishlist-card button{
+        padding:11px;
+        font-size:13px;
+    }
+
+}
