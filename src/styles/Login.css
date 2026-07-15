@@ -137,7 +137,7 @@ body{
 
   
   /* Text and Icon styling */
-  color: #000000; /* Pastel soft red so it's readable over dark colors */
+  /* Pastel soft red so it's readable over dark colors */
   font-size: 14px;
   font-weight: 500;
   
